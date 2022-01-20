@@ -9,9 +9,9 @@
 <body>
   <nav>
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/description">Chi siamo</a></li>
-      <li><a href="/position">Dove trovarci</a></li>
+      <li><a href="{{route('home')}} ">Home</a></li>
+      <li><a href="{{route('description')}}">Chi siamo</a></li>
+      <li><a href="{{route('position')}}">Dove trovarci</a></li>
     </ul>
   </nav>
   <h1>Hello {{$name}}</h1>
