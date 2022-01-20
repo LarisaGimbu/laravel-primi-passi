@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Position</title>
+  <title>Contatti</title>
 </head>
 <body>
   <nav>
@@ -15,16 +15,15 @@
       <li><a href="{{route('contatti')}} ">Contatti</a></li>
     </ul>
   </nav>
-  <h1>Dove trovarci</h1>
-  <h2>Sede principale:</h2>
-  <p>{{$city}}, {{$street}} numero {{$number}}, {{$country}} </p>
-
-  <h2>Fliliali:</h2>
+  <h1>Contatti:</h1>
   <ul>
-    @foreach ($branches as $branche)
-      <li>{{$branche}} </li>
-    @endforeach
+    <li>Telefono: {{$telephone}} </li>
+    <li>Fax: {{$fax}} </li>
+    <li>@if (strpos($email, '@'))
+      Email: {{$email}}
+    @else
+      Email non presente
+    @endif </li>
   </ul>
-  
 </body>
 </html>

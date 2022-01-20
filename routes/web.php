@@ -40,3 +40,13 @@ Route::get('/position', function () {
 
     return view('position', $addresse);
 })->name('position');
+
+Route::get('/contatti', function () {
+    $data = [
+        "telephone"=> 2351489696,
+        "fax"=> 2452745696,
+        "email"=> 'ccj@gmial.com'
+    ];
+
+    return view('contatti', $data);
+})->name('contatti');
