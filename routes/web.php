@@ -30,9 +30,13 @@ Route::get('/description', function () {
 })->name('description');
 
 Route::get('/position', function () {
-    $data = [
-
+    $addresse = [
+        "city"=> "Milano",
+        "country"=> "Italia",
+        "street"=> "via Cesare",
+        "number"=> "5",
+        "branches"=> ['Bologna', 'Roma', 'Torino'],
     ];
 
-    return view('position', $data);
+    return view('position', $addresse);
 })->name('position');

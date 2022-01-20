@@ -15,5 +15,15 @@
     </ul>
   </nav>
   <h1>Dove trovarci</h1>
+  <h2>Sede principale:</h2>
+  <p>{{$city}}, {{$street}} numero {{$number}}, {{$country}} </p>
+
+  <h2>Fliliali:</h2>
+  <ul>
+    @foreach ($branches as $branche)
+      <li>{{$branche}} </li>
+    @endforeach
+  </ul>
+  
 </body>
 </html>
