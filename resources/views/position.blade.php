@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Position</title>
 </head>
 <body>
   <nav>
@@ -14,6 +14,6 @@
       <li><a href="/position">Dove trovarci</a></li>
     </ul>
   </nav>
-  <h1>Hello {{$name}}</h1>
+  <h1>Dove trovarci</h1>
 </body>
 </html>

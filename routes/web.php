@@ -20,3 +20,19 @@ Route::get('/', function () {
 
     return view('home', $data);
 })->name('home');
+
+Route::get('/description', function () {
+    $data = [
+
+    ];
+
+    return view('description', $data);
+})->name('description');
+
+Route::get('/position', function () {
+    $data = [
+
+    ];
+
+    return view('position', $data);
+})->name('position');
